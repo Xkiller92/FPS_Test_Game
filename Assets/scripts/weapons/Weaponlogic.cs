@@ -77,7 +77,7 @@ public class Weaponlogic : MonoBehaviour
             targets = targets | _targets[i];
         }
   
-        //this is a dump detection implementation is you want to detect more than 1 enemy use colliders next time    
+        //this is a dump detection implementation if you want to detect more than 1 enemy use colliders next time    
         isShot = Physics.Linecast(transform.position, indicator.position, targets);
 
         Debug.DrawLine(transform.position, indicator.position, Color.yellow);
